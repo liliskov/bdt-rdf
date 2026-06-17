@@ -1,0 +1,12 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+
+<#me>
+    a foaf:Person ;
+    foaf:name "Lili Vandermeersch" ;
+    schema:memberOf <https://pietercolpaert.be/teaching/bdt/#2025-2026> ;
+    foaf:knows <https://pietercolpaert.be/#me> .
+
+<https://pietercolpaert.be/teaching/bdt/#2025-2026>
+    a schema:Course ;
+    schema:name "Big Data Technology 2025-2026" .
