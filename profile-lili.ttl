@@ -1,12 +1,25 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <https://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 <#me>
     a foaf:Person ;
     foaf:name "Lili Vandermeersch" ;
+    foaf:homepage <https://three-d-tree.be/> ;
+    foaf:based_near <http://www.wikidata.org/entity/Q1296> ;
+    schema:knowsAbout "Big Data systems", "Linked Data", "RDF", "data engineering", "timberwork", "joinery" ;
     schema:memberOf <https://pietercolpaert.be/teaching/bdt/#2025-2026> ;
     foaf:knows <https://pietercolpaert.be/#me> .
+
+<https://three-d-tree.be/>
+    a schema:Organization ;
+    schema:name "Three-D-Tree" ;
+    schema:description "A timberwork and joinery-related project connected to custom woodwork." ;
+    schema:url <https://three-d-tree.be/> .
 
 <https://pietercolpaert.be/teaching/bdt/#2025-2026>
     a schema:Course ;
     schema:name "Big Data Technology 2025-2026" .
+
+<http://www.wikidata.org/entity/Q1296>
+    schema:name "Ghent" .
